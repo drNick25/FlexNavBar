@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en"></html>
+<title>NavPage</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://kit.fontawesome.com/ae355807dd.js" crossorigin="anonymous"></script>
+<link href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Alocal_bar%3A">
+<style>
+
+/* reset css*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+
+/* sfarsit css reset*/
+
+
+
+
+/* declaratii generale*/
+
+html{
+  font-size: 20px;
+  font-family:  'Roboto', sans-serif;
+}
+* {box-sizing: border-box;}
+
+
+section{ 
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #ffff66 32%, #000000 100%);
+    padding: 2.5rem;
+
+}
+.home {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    height: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.home:hover{
+    box-shadow:5px 5px 5px 5px rgb(23, 245, 23);
+    z-index: 99;
+    
+}
+
+.about {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    height: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.about:hover{
+    box-shadow:5px 5px 5px 5px rgb(23, 245, 23);
+    z-index: 99;
+    
+}
+
+.cont {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    height: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.cont:hover{
+    box-shadow:5px 5px 5px 5px rgb(23, 245, 23);
+    z-index: 99;
+    
+}
+
+.nout {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    height: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.nout:hover{
+    box-shadow:5px 5px 5px 5px rgb(23, 245, 23);
+    z-index: 99;
+    
+}
+
+.serv {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    height: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.serv:hover{
+    box-shadow:5px 5px 5px 5px rgb(23, 245, 23);
+    z-index: 99;
+    
+}
+
+.prod {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    height: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.prod:hover{
+    box-shadow:5px 5px 5px 5px rgb(23, 245, 23);
+    z-index: 99;
+    
+}
+
+.info {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    height: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.info:hover{
+    box-shadow:5px 5px 5px 5px rgb(23, 245, 23);
+    z-index: 99;
+    
+}
+    
+.rec {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    height: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.rec:hover{
+    box-shadow:5px 5px 5px 5px rgb(23, 245, 23);
+    z-index: 99;
+    
+}
+
+
+.content{
+
+    width: 25rem;
+    height: 50vh;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.contin {
+
+    width: 30rem;
+    height: 50vh;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+
+}
+
+#myBtn{
+
+    position: relative;
+    float: right;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: 3px solid black;
+    background: inherit;
+    color: white;
+}
+
+
+#myBtn:hover{
+    border: 5px solid rgb(23, 245, 23);
+}
+
+/* Responsive layout  */
+@media (max-width: 500px) {
+  section {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    overflow: unset;
+    align-items: center;
+
+}
+
+    .home,.about,.nout,.serv,.cont,.prod,.info,.rec{
+        width: 75%;
+        height: auto;
+        margin: 0.5rem;
+        text-align: center;
+
+    }
+
+    .content,.contin{
+        width: 75%;
+        height: auto;
+        margin: 0.5rem; }
+
+     
+
+}
+
+
+@media (max-width: 1200px) {
+  section {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    overflow: unset;
+    align-items: center;
+
+}
+
+    .home,.about,.nout,.serv,.cont,.prod,.info,.rec{
+        width: 75%;
+        height: auto;
+        margin: 0.5rem;
+        text-align: center;
+
+    }
+
+    .content,.contin{
+        width: 75%;
+        height: auto;
+        margin: 0.5rem; 
+        align-items: center;}
+
+
+}
+
+</style>
+</head>
+<body>
+<section>
+        <a class="home" href="#home">Home</a>
+        <a  class= "about"  href="#about">Despre</a>
+        <a  class=" cont" href="#contact">Contact</a>
+        <a  class=" nout" href="#Noutati">Noutati</a>
+        <a  class=" serv" href="#servicii">Servicii</a>
+        <a  class=" prod" href="#servicii">Produse</a>
+        <a  class=" info" href="#servicii">Info clienti</a>
+        <a  class=" rec" href="#servicii">Recomandari</a>
+
+      
+                
+            <div class=" contin ">
+                <h1 style="text-align: center; font-weight: bold;">Serviciu 1 </h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut lorem dictum nulla consequat tincidunt. 
+                Praesent luctus congue dolor at sollicitudin. Ut scelerisque lobortis dui aliquam tincidunt. In ornare, ipsum non fermentum volutpat,
+                 justo eros porta lectus, sit amet lobortis purus metus vel elit. 
+                 Vivamus suscipit tellus sit amet purus rutrum accumsan. Duis consequat volutpat imperdiet. Morbi finibus lectus est. Vivamus 
+                sit amet nisl placerat, condimentum metus ac, lacinia ex...</p>
+                <button onclick="myFunction()" id="myBtn">Read more</button>
+             </div>
+
+
+      <div class=" content ">
+          <h2 style="text-align: center; font-weight: bold;"> Serviciu 2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut lorem dictum nulla consequat tincidunt. 
+              Praesent luctus congue dolor at sollicitudin. Ut scelerisque lobortis dui aliquam tincidunt. In ornare, ipsum non fermentum volutpat,
+               justo eros porta lectus, sit amet lobortis purus metus vel elit. 
+               Vivamus suscipit tellus sit amet purus rutrum accumsan. Duis consequat volutpat imperdiet. Morbi finibus lectus est. Vivamus 
+              sit amet nisl placerat, condimentum metus ac, lacinia ex... </p>
+              <button onclick="myFunction()" id="myBtn">Read more</button>
+      </div>
+
+
+</section>
+
+<script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
+
+
+
+</body>
+</html>
